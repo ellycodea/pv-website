@@ -38,7 +38,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-row h-full items-center hover:border-b-2 cursor-pointer">
-          <Link href="https://status.perfectvisions.website/status/perfectvisions">Status</Link>
+          <Link href="https://status.perfectvisions.website/">Status</Link>
         </div>
         <div className="flex flex-row h-full items-center hover:border-b-2 cursor-pointer">
           <Link href="/support" className="flex flex-row gap-1 items-center">
