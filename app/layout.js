@@ -10,10 +10,12 @@ export const metadata = {
   icons: {
     icon: '/logo.png'
   },
-  image: '/logo.png',
-  color: '#000023',
-  url: "https://perfectvisions.website/",
-  type: "website"
+  openGraph: {
+    images: ['/logo.png'],
+    color: '#000023',
+    url: "https://perfectvisions.website/",
+    type: "website"
+  }
 };
 
 export default function RootLayout({ children }) {
