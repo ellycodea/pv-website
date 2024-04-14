@@ -6,9 +6,11 @@ import { FiExternalLink } from "react-icons/fi";
 import { FaAngleLeft , FaAngleRight } from "react-icons/fa";
 import { useRef, useState, useEffect } from "react";
 import Footer from '@/components/Footer/layout'
+import { LuLoader2 } from "react-icons/lu";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
+  const [isLoading, setLoading] = useState(true)
 
   const slideRef = useRef()
 
@@ -72,10 +74,13 @@ export default function Home() {
     };
 
     handleResize(); // Run initially to detect on load
-
+    setLoading(false)
   }, []);
   return (
     <div className="flex flex-col">
+      {isLoading ? <div className="w-screen h-screen bg-black fixed flex items-center justify-center content-center">
+        <LuLoader2 className="animate-spin"/>
+      </div> : ''}
       <NavBar />
       <main className="pt-20 overflow-y-auto ">
         <div className="bg-black w-full mt-4 p-4 flex flex-row">
