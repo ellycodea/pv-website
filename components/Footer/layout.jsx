@@ -5,7 +5,7 @@ export default function Home() {
     return (
         <footer class="footer">
     <ul class="social-icon">
-      <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/tysaiwdev/pv-website">
+      <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/PerfectVisions/website">
       <FaGithub />
         </a></li>
       <li class="social-icon__item"><a class="social-icon__link" href="https://discord.gg/mQgFvnUaUJ">
