@@ -112,6 +112,8 @@ export default function Home() {
         </div>
       </main>
       <Footer/>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2048560139347623"
+     crossorigin="anonymous"></script>
     </div>
   );
 }
