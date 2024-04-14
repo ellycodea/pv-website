@@ -1,7 +1,6 @@
 import Image from "next/image";
 import NavBar from '@/components/NavBar/layout'
 import Link from 'next/link'
-import { FiExternalLink } from "react-icons/fi";
 import { MdVerified } from "react-icons/md";
 export default function Home() {
   return (
