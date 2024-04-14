@@ -6,6 +6,22 @@ import { useState, useEffect } from "react";
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const isSmallScreen = window.innerWidth <= 768; // Adjust threshold as needed
+      setIsMobile(isSmallScreen);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    handleResize(); // Run initially to detect on load
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,9 +46,9 @@ export default function Home() {
       } `}
     >
       <Link href="/">
-        <Image src="/logo.png" width={70} height={26} className="ml-20" draggable={false} />
+        <Image src="/logo.png" width={70} height={26} className={isMobile ? '' : "ml-20"} draggable={false} />
       </Link>
-      <div className="flex items-center justify-center content-center flex-row gap-10 ml-auto">
+      {isMobile ? '' : <div className="flex items-center justify-center content-center flex-row gap-10 ml-auto">
         <div className="flex flex-row h-full items-center hover:border-b-2 cursor-pointer">
           <Link href="/projects">Projects</Link>
         </div>
@@ -50,7 +66,7 @@ export default function Home() {
             Store <FiExternalLink color="#fff" />
           </Link>
         </div>
-      </div>
+      </div>}
       <div className="items-center flex content-center ml-auto mr-4">
         <Link
           href="https://discord.gg/DqaZ58jWsh"
