@@ -95,19 +95,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center content-center ">
-        <ins class="adsbygoogle"
-     style={{
-      display:"inline-block",
-      width: "728px",
-      height:"90px",
-      borderRadius: "10px"
-     }}
-     data-ad-client="ca-pub-2048560139347623"
-     data-ad-slot="7569843493"
-
-     ></ins>
-        </div>
+        
         <p className="m-2 ml-6 font-bold">Featured</p>
         <div className="flex flex-row">
           <button onClick={onPrev}><FaAngleLeft /></button>
@@ -122,6 +110,19 @@ export default function Home() {
             </div>
           </div>
           <button onClick={onNext} className="ml-auto"><FaAngleRight /></button>
+        </div>
+        <div className="flex items-center justify-center content-center ">
+        <ins class="adsbygoogle"
+     style={{
+      display:"inline-block",
+      width: "728px",
+      height:"90px",
+      borderRadius: "10px"
+     }}
+     data-ad-client="ca-pub-2048560139347623"
+     data-ad-slot="7569843493"
+
+     ></ins>
         </div>
       </main>
       <Footer/>
