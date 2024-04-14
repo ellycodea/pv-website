@@ -40,7 +40,7 @@ export default function Home() {
     {
         "image": "/luckky.png",
         "username": "liftzera",
-        "link": "https://discord.gg/2uGFtGfpP6"
+        "link": "https://discord.gg/6zcrWYrCcr"
     },
     {
         "image": "/banner.webp",
@@ -84,7 +84,7 @@ export default function Home() {
       <NavBar />
       <main className="pt-20 overflow-y-auto ">
         <div className="bg-black w-full mt-4 p-4 flex flex-row">
-         {isMobile ? '' :  <Image draggable={false} src="/banner.webp" width={700} height={700} className="rounded-md" />}
+         {isMobile ? '' :  <Image draggable={false} src="/PerfectVisionsBanner.png" width={700} height={700} className="rounded-md" />}
           <div className={isMobile ? "flex flex-col justify-center" : "ml-8 flex flex-col justify-center"}>
             <p className="font-bold text-4xl">Descobrindo novos mundos!</p>
             <p className="text-slate-500 mt-4 w-full">Olá viajante! Você acaba de entrar no site oficial da Perfect Visions, um grupo de desenvolvedores que estão constantemente construindo novos projetos significativos na comunidade de developers, a Perfect Visions inicialmente foi criada para ser o orgão por trás do bot <Link href="https://discord.gg/mQgFvnUaUJ" className="text-blue-500 hover:text-blue-600">Jujuba</Link>, porém ao longo do tempo nos tornamos um grupo imenso com diversos projetos que de alguma forma significativa ajuda a comunidade de developers em geral.</p>
@@ -112,7 +112,7 @@ export default function Home() {
           <button onClick={onNext} className="ml-auto"><FaAngleRight /></button>
         </div>
         <div className="flex items-center justify-center content-center ">
-        <ins class="adsbygoogle"
+        <ins className="adsbygoogle"
      style={{
       display:"inline-block",
       width: "728px",

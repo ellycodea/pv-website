@@ -17,7 +17,7 @@ export default function Home() {
        
             </div>
         </Link>
-        <Link href="https://discord.gg/2uGFtGfpP6" className="p-2 rounded flex flex-row max-w-2xl w-full hover:bg-slate-900">
+        <Link href="https://discord.gg/6zcrWYrCcr" className="p-2 rounded flex flex-row max-w-2xl w-full hover:bg-slate-900">
             <Image src="/luckky.png" width={120} height={120} className="rounded-md hover:opacity-70 border-2 border-yellow-500"></Image>
             <div className="ml-4">
             <p className="font-bold flex flex-row items-center gap-2 mt-2">Luckky <MdVerified /></p>
