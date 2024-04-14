@@ -6,11 +6,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Perfect Visions",
-  description: "um novo mundo para você explorar, seja seu próprio caminho moral.",
   icons: {
     icon: '/logo.png'
   },
   openGraph: {
+    title: "Perfect Visions",
     images: ['/logo.png'],
     color: '#000023',
     url: "https://perfectvisions.website/",
