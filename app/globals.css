@@ -8,6 +8,7 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -38,7 +39,7 @@ body {
 
 /* Estilo para o indicador da barra de rolagem */
 ::-webkit-scrollbar-thumb {
-  background-color: #ffffff; /* Cor do indicador da barra de rolagem */
+  background-color: #000000; /* Cor do indicador da barra de rolagem */
   border-radius: 5px; /* Raio de borda do indicador da barra de rolagem */
 }
 

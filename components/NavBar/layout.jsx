@@ -30,7 +30,7 @@ export default function Home() {
       } `}
     >
       <Link href="/">
-        <Image src="/logo.png" width={70} height={26} className="ml-20" />
+        <Image src="/logo.png" width={70} height={26} className="ml-20" draggable={false} />
       </Link>
       <div className="flex items-center justify-center content-center flex-row gap-10 ml-auto">
         <div className="flex flex-row h-full items-center hover:border-b-2 cursor-pointer">
