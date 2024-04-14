@@ -11,7 +11,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Perfect Visions",
-    images: ['/logo.png'],
+    images: ['https://perfectvisions.website/logo.png'],
     color: '#000023',
     url: "https://perfectvisions.website/",
     type: "website"
