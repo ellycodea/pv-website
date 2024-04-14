@@ -49,23 +49,23 @@ export default function Home() {
         <Image src="/logo.png" width={70} height={26} className={isMobile ? '' : "ml-20"} draggable={false} />
       </Link>
       {isMobile ? '' : <div className="flex items-center justify-center content-center flex-row gap-10 ml-auto">
-        <div className="flex flex-row h-full items-center hover:border-b-2 cursor-pointer">
-          <Link href="/projects">Projects</Link>
-        </div>
+        <Link href="/projects" className="flex flex-row h-full items-center hover:border-b-2 cursor-pointer">
+          <div>Projects</div>
+        </Link>
 
-        <div className="flex flex-row h-full items-center hover:border-b-2 cursor-pointer">
-          <Link href="https://status.perfectvisions.website/">Status</Link>
-        </div>
-        <div className="flex flex-row h-full items-center hover:border-b-2 cursor-pointer">
-          <Link href="/support" className="flex flex-row gap-1 items-center">
+        <Link href="https://status.perfectvisions.website/" className="flex flex-row h-full items-center hover:border-b-2 cursor-pointer">
+          <div>Status</div>
+        </Link>
+        <Link href="/support" className="flex flex-row h-full items-center hover:border-b-2 cursor-pointer">
+          <div className="flex flex-row gap-1 items-center">
             Support <FiExternalLink color="#fff" />
-          </Link>
-        </div>
-        <div className="flex flex-row h-full items-center hover:border-b-2 cursor-pointer">
-          <Link href="/" className="flex flex-row gap-1 items-center">
+          </div>
+        </Link>
+        <Link href="/" className="flex flex-row h-full items-center hover:border-b-2 cursor-pointer">
+          <div className="flex flex-row gap-1 items-center">
             Store <FiExternalLink color="#fff" />
-          </Link>
-        </div>
+          </div>
+        </Link>
       </div>}
       <div className="items-center flex content-center ml-auto mr-4">
         <Link
