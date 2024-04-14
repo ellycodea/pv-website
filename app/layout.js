@@ -12,9 +12,10 @@ export const metadata = {
   openGraph: {
     title: "Perfect Visions",
     images: ['https://perfectvisions.website/logo.png'],
-    color: '#000023',
+    "theme-color": '#000023',
     url: "https://perfectvisions.website/",
-    type: "website"
+    type: "website",
+    description: "Olá viajante, aqui está o site oficial da Perfect Visions! Venha descobrir todos os nossos projetos e ficar maravilhado com cada um deles!"
   }
 };
 
