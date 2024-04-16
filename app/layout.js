@@ -15,12 +15,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Perfect Visions",
-    images: [{
-      url: 'https://perfectvisions.website/logo.png',
-      width: 120,
-      height: 120,
-
-    }],
+    images: ["https://perfectvisions.website/thumbnail.png"],
     url: "https://perfectvisions.website/",
     type: "website",
     description: "Olá viajante, aqui está o site oficial da Perfect Visions! Venha descobrir todos os nossos projetos e ficar maravilhado com cada um deles!"
