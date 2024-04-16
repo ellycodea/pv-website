@@ -7,11 +7,12 @@ import { FaAngleLeft , FaAngleRight } from "react-icons/fa";
 import { useRef, useState, useEffect } from "react";
 import Footer from '@/components/Footer/layout'
 import { LuLoader2 } from "react-icons/lu";
+import ImageLoading from '@/components/ImageLoading/link'
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
   const [isLoading, setLoading] = useState(true)
-
+ 
   const slideRef = useRef()
 
   const onNext = () => {
@@ -102,10 +103,7 @@ export default function Home() {
           <div className="overflow-x-auto scrollbar-container horizontal-scroll-wrapper" ref={slideRef}>
             <div id="newswire-content" className="flex flex-nowrap w-fit gap-2 p-2 scrollbar-content">
               {ar.map(a => (
-                <Link title={a.username} href={a.link} className="hover:opacity-50 w-full min-w-24 max-w-52  bg-black rounded-lg flex flex-col border-[0.5px] border-slate-700 hover:bg-slate-900 cursor-pointer">
-                  <Image alt="Newswire Perfect Visions" key={a.username} draggable={false} src={a.image} className="rounded-lg w-full h-full" width={200} height={500} />
-                  
-                </Link>
+               <ImageLoading image={a.image} username={a.username} key={a.username} link={a.link}/>
               ))}
             </div>
           </div>

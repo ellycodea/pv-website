@@ -41,7 +41,7 @@ export default function Home() {
 
   return (
     <div
-      className={`w-full h-20 bg-black border-b-[0.5px] border-stone-800 flex flex-row p-1 fixed backdrop-blur-2xl ${
+      className={`w-full h-20 bg-black border-b-[0.5px] border-stone-800 flex flex-row  fixed backdrop-blur-sm bg-opacity-70 ${
         scrolled ? "hidden" : ""
       } `}
     >
