@@ -24,8 +24,8 @@ export default function Home({ initialUserId, imageUrl }) {
   return (
     <>
       <NavBar />
-      <main className="pt-24 overflow-y-auto flex items-center justify-center content-center flex-col gap-4">
-        <div className='rounded max-w-[680px] w-full min-h-[400px] max-h-[640px] h-full bg-white'>
+      <main className="p-2 pt-24 overflow-y-auto flex items-center justify-center content-center flex-col gap-4">
+        <div className='rounded max-w-[680px] w-full  min-h-[240px] max-h-[640px] h-full bg-white'>
           { (
             <img
               className="rounded w-full h-full"
@@ -36,7 +36,7 @@ export default function Home({ initialUserId, imageUrl }) {
         </div>
       
         
-        <div className='w-[50%] flex flex-row p-2 gap-3'>
+        <div className='w-full max-w-96 flex flex-row p-2 gap-3'>
           <input
             type='text'
             value={userId}
