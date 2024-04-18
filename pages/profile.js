@@ -1,22 +1,27 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { MdError } from "react-icons/md";
+import { LuLoader2 } from "react-icons/lu";
 import NavBar from '@/components/NavBar/layout';
-export default function Home({ initialUserId, imageUrl }) {
-  const [userId, setUserId] = useState(initialUserId);
-  const [currentImage, setCurrentImage] = useState(imageUrl);
+export default function Home({ imageUrl }) {
+  const [userId, setUserId] = useState('');
+  const [currentImage, setCurrentImage] = useState('https://api.perfectvisions.website/users/882593474086572123/profile/view');
   const [error, setError] = useState(false)
+  const [loading, setLoading] = useState(false)
 
   const handleUpdateImage = async () => {
+    setLoading(true)
     try {
-      console.log('USER ID', userId)
+      
       const response = await fetch(`/api/profile/${userId}`).catch(err => {})
       if(response.status !== 200) return setError(true)
       const imageUrl = `/api/profile/${userId}`
       setCurrentImage(imageUrl);
+      setLoading(false)
       setError(false)
     } catch (error) {
       console.error('Erro ao buscar imagem de perfil:', error);
+      setLoading(false)
       setError(true)
     }
   };
@@ -41,14 +46,15 @@ export default function Home({ initialUserId, imageUrl }) {
             type='text'
             value={userId}
             onChange={(e) => setUserId(e.target.value)}
-            className='rounded-full p-2 w-full text-black'
+            className='rounded-full p-2  w-full text-black'
             placeholder='Digite um ID de usuário válido'
           />
           <button
             onClick={handleUpdateImage}
-            className='p-2 bg-yellow-400 rounded-full text-black font-bold hover:bg-yellow-500'
+            disabled={loading}
+            className='p-2 bg-yellow-400 rounded-full items-center justify-center content-center flex w-full max-w-[150px] text-black font-bold hover:bg-yellow-500'
           >
-            Atualizar
+            {loading ? <LuLoader2 className='animate-spin' /> : 'Atualizar'}
           </button>
         </div>
         {error && (
