@@ -67,14 +67,17 @@ export default function Home() {
           </div>
         </Link>
       </div>}
-      <div className="items-center flex content-center ml-auto mr-4">
+      <div className="items-center flex content-center ml-auto mr-4 gap-4">
         <Link
           href="https://discord.gg/DqaZ58jWsh"
           className="bg-white h-[50%] p-5 rounded text-gray-950 items-center flex content-center font-bold hover:opacity-50 gap-2"
         >
           Discord <FiExternalLink color="#000000" />
         </Link>
-      </div>
+        <Link href="/">
+          <Image className="rounded-full w-10 h-10" src="/ju-icon.png" width={120} height={120}></Image>
+        </Link>
+        </div>
     </div>
   );
 }
